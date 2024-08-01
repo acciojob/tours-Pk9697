@@ -1,12 +1,57 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.tours{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:1em;
+    padding: 1em;
+}
+
+.tour-card{
+    border-radius: 10px;
+    border: 2px solid #f0f0f0;
+}
+
+.tour-img{
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour-body{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap:0.5em;
+}
+
+
+
+.delete-btn{
+    padding: 0.5em;
+    background-color: red;
+    width: min-content;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn{
+    text-wrap: nowrap;
+    padding: 0.5em;
+    background-color:rgb(87, 191, 233);
+    width: min-content;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
 }
